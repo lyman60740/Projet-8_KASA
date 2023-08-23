@@ -23,7 +23,7 @@ function About() {
   ];
 
   const aboutCompBoxStyle = {
-    padding: '0px 100px', // Ajoutez le padding souhaité ici
+    padding: '0px 100px',
   };
 
   return (

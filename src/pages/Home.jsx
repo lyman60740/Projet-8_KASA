@@ -1,7 +1,5 @@
 // Home.js
 import React from 'react';
-
-// import banner from '../Background.svg';
 import Thumb from '../components/Thumb';
 import products from '../product.json';
 

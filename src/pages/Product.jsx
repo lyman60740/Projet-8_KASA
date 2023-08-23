@@ -83,11 +83,11 @@ const prevImage = () => {
     borderRadius : '25px'
   };
 
-  var actualIndex = currentIndex + 1;
+  var actualIndex = currentIndex + 1; // permet d'afficher l'index dans une notation humaine (commençant à partir de 1 au lieu de 0).
   return (
     <div className="product-page">
       <div className="carousel">
-      {product.pictures.length > 1 && <button onClick={prevImage}><img src={arrowCarousel} alt="arrowCarousel" /></button>}
+      {product.pictures.length > 1 && <button onClick={prevImage}><img src={arrowCarousel} alt="arrowCarousel" /></button>} 
         <div style={carouselImageStyle} className='carousel-bg' />
         <div className='currentIndex' >
             {product.pictures.length > 1 ? `${actualIndex}/${product.pictures.length}` : null}
