@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/LOGO.svg';
 
-function HeaderLink({ to, label, children }) {
+function HeaderLink({ to,  label,children }) {
   const location = useLocation();
 
   return (

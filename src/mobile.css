@@ -166,3 +166,13 @@
     
   }
   
+  @media (max-width: 740px) {
+    .thumb {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .thumb-link {
+        width: 100%;
+        aspect-ratio: inherit;
+    }
+  }

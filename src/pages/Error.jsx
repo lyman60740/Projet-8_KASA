@@ -1,9 +1,11 @@
 // Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Template from '../components/Template';
 
 function Error() {
   return (
+    <Template>
     <div className='errorBox'>
       <div></div>
         <div className='errorBox-top'>
@@ -14,6 +16,7 @@ function Error() {
             <Link to="/">Retourner sur la page d'accueil</Link>
         </div>
     </div>
+    </Template>
   );
 }
 

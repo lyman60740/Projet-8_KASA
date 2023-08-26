@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import products from '../product.json';
 import Dropdown from '../components/Dropdown';
 import arrowCarousel from '../assets/arrowCarousel.svg';
+import Template from '../components/Template';
 
 function Product() {
   const { id } = useParams();
@@ -85,6 +86,7 @@ const prevImage = () => {
 
   var actualIndex = currentIndex + 1; // permet d'afficher l'index dans une notation humaine (commençant à partir de 1 au lieu de 0).
   return (
+    <Template>
     <div className="product-page">
       <div className="carousel">
       {product.pictures.length > 1 && <button onClick={prevImage}><img src={arrowCarousel} alt="arrowCarousel" /></button>} 
@@ -126,6 +128,7 @@ const prevImage = () => {
       </div>
       
     </div>
+    </Template>
   );
 }
 

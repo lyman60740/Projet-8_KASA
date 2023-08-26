@@ -1,6 +1,7 @@
 // About.js
 import React from 'react';
 import Dropdown from '../components/Dropdown';
+import Template from '../components/Template';
 
 function About() {
   const dropdownData = [
@@ -27,6 +28,7 @@ function About() {
   };
 
   return (
+    <Template>
     <div className='about'>
       <div className='about-banner'>
       </div>
@@ -36,6 +38,7 @@ function About() {
         ))}
       </div>
     </div>
+    </Template>
   );
 }
 
